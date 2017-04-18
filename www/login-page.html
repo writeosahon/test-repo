@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<!-- login-page -->
+<ons-page id="login-page">
+    <!--<ons-toolbar class="toolbar--noshadow">
+        <div class="left">
+            <ons-toolbar-button>
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center" style="text-align: center;">Fixed Header</div>
+        <div class="right">
+            <ons-toolbar-button><ons-icon icon="md-more-vert"></ons-icon></ons-toolbar-button>
+        </div>
+    </ons-toolbar>-->
+
+    <ons-carousel fullscreen id="login-carousel">
+        <ons-carousel-item>
+            <div class="container">
+                <form class="signUp">
+                    <h3>Create Your Account</h3>
+                    <p>Just enter your email address</br>
+                        and your password for join.
+                    </p>
+                    <input class="w100" type="email" placeholder="Insert eMail" required autocomplete='off'>
+                    <input type="password" placeholder="Insert Password" required>
+                    <input type="password" placeholder="Verify Password" required>
+                    <button class="form-btn sx log-in" type="button">Log In</button>
+                    <button class="form-btn dx" type="submit">Sign Up</button>
+                </form>
+                <form class="signIn">
+                    <h3>Welcome<br>Back !</h3>
+                    <button class="fb" type="button">Log In With Facebook</button>
+                    <p>- or -</p>
+                    <input type="email" placeholder="Insert eMail" autocomplete='off' required>
+                    <input type="password" placeholder="Insert Password" required>
+                    <button class="form-btn sx back" type="button">Back</button>
+                    <button class="form-btn dx" type="submit">Log In</button>
+                </form>
+            </div>
+        </ons-carousel-item>
+
+    </ons-carousel>
+</ons-page>
+</body>
+</html>

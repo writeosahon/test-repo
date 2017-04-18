@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- style libraries for the app (onsen ui) -->
+    <link rel="stylesheet" href="css/onsenui.css">
+    <link rel="stylesheet" href="css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/font_awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+    <!--- style library used for materialize-css -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+    <!-- style library for app -->
+    <link rel="stylesheet" href="css/app-custom-styles.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Content-Security-Policy tag -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' wss: ws: data: http: https: cedrapp: blob: gap 'unsafe-inline' 'unsafe-eval'">
+
+    <script src="js/polyfill.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <!-- kendo libraries -->
+    <script src="js/kendo.core.min.js"></script>
+
+    <!-- script library for onsen ui -->
+    <script src="js/onsenui.min.js"></script>
+
+    <!-- script library for materialize-css -->
+    <script src="js/materialize.min.js"></script>
+
+    <!-- hybrid script libraries for intel xdk and cordova -->
+    <script src="cordova.js"></script>
+
+    <!-- app script -->
+    <script src="js/compiled-js/base-compiled.js"></script>
+    <script src="js/compiled-js/controller-compiled.js"></script>
+    <script src="js/compiled-js/model-compiled.js"></script>
+
+    <!-- special script for triggering the intel xdk special device ready event i.e. "app.Ready" -->
+    <script src="xdk/init-dev.js"></script>
+
+</head>
+<body>
+
+<!-- default navigator template -->
+<ons-navigator id="template-navigator" page="swipe-delete-page.html"></ons-navigator>
+
+<!-- this dialog is used to display loading messages -->
+<ons-modal id="loader-modal" disable-auto-styling style="background-color: rgba(0, 0, 0, 0.3);">
+    <div style="color: #ffffff; width: 80%;
+    margin-left: 10%; margin-right: 10%; position: relative; top: 0; bottom: 0; height: 100%;">
+        <div style="width: 18%; text-align: center; float: left; background-color: rgba(0, 0, 0, 1) !important;
+        padding-top: 1.5em; padding-bottom: 2em; position: absolute; top: 46%; left: 0; bottom: 46%; height: 8%;">
+            <ons-progress-circular indeterminate></ons-progress-circular>
+        </div>
+        <div id="loader-modal-message" style="width: 70%; text-align: left; float: left;
+        background-color: rgba(0, 0, 0, 1) !important; padding-left: 0.5em; padding-right: 0.5em; padding-top: 2em; padding-bottom: 1.5em;
+        position: absolute; top: 46%; left: 18%; bottom: 46%; height: 8%">
+            Loading...
+        </div>
+    </div>
+</ons-modal>
+
+</body>
+</html>
