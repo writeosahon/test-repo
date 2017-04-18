@@ -80,7 +80,7 @@ utopiasoftware.template.controller = {
                 });
 
                 // hide the loader
-                $('#loader-modal').get(0).hide();
+                //$('#loader-modal').get(0).hide();
 
                 // display a discovery feature
                 setTimeout(function(){

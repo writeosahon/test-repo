@@ -253,16 +253,20 @@ input {
 
 /** CUSTOM LIST STYLE BEGINS **/
 ul.my-custom-list {
+    overflow-x: visible;
     border-left-style: solid;
-    border-left-width: 3px;
+    border-left-width: 2px;
     border-left-color: #b388ff;
 }
 ul.my-custom-list > li {
-    list-style-position: outside;
-    list-style-type: disc;
-    border-left-style: solid;
-    border-left-width: 3px;
-    border-left-color: #b388ff;
+    overflow-x: visible;
+    list-style-type: none;
     color: #b388ff;
-
+}
+ul.my-custom-list > li:before {
+    content:'\2022 ';
+    color: #b388ff;
+    font-size: 2.5em;
+    z-index: 2;
+    margin-left: -8px;
 }
