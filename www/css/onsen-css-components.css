@@ -378,7 +378,7 @@ h4, h5, h6 {
 }
 
 :checked + .switch--material__toggle {
-  background-color: #77c2bb;
+  background-color: #d1c4e9;
   box-shadow: none;
 }
 
@@ -5706,7 +5706,7 @@ h4, h5, h6 {
 }
 
 .progress-bar__secondary {
-  background-color: #80cbc4;
+  background-color: #ede7f6;
   z-index: 0;
 }
 
@@ -5845,7 +5845,7 @@ h4, h5, h6 {
 }
 
 .progress-circular__secondary {
-  stroke: #80cbc4;
+  stroke: #ede7f6;
 }
 
 .progress-circular--indeterminate {
